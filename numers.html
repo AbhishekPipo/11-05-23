@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a = "10";
+    var b = Number(a); // converts string to integer/number
+    document.write(b + 10,"<br>");
+
+    var a = true;
+    var b = Number(a); // converts boolean to integer/number
+    document.write(b,"<br>");
+
+    var a = 10.10;
+    var b = parseInt(a); // returns integer value
+    document.write(b , "<br>");
+
+    var a = 10.45;
+    var b = parseFloat(a); // returns float value
+    document.write(b , "<br>");
+
+    var a = 101;
+    var b = Number.isFinite(a); // returns true if finite value
+    document.write(b , "<br>");
+
+    var a = "10.00";
+    var b = Number.isInteger(a); // returns true if integer value
+    document.write(b , "<br>");
+
+    var a = 123.5678;
+    var b = a.toFixed(2) ; // prints decimal value after roundoff
+    document.write(b , "<br>");
+
+    var a = 5.49;
+    var b = a.toPrecision(2) // returns roundoff value
+    document.write(b , "<br>");
+
+</script>
+</body>
+</html>
+
+
+
+math
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a = Math.ceil(5.89); // gives upword integer value 
+    document.write(a,"<br>");
+
+    var a = Math.floor(5.89); // gives downword integer value 
+    document.write(a,"<br>");
+
+    var a = Math.round(2.49); // gives nearest integer value 
+    document.write(a,"<br>");
+
+    var a = Math.trunc(7.90); // gives integer value 
+    document.write(a,"<br>");
+
+    var a = Math.max(5.89,45,90,100,2.3); // gives maximum value 
+    document.write(a,"<br>");
+
+    var a = Math.min(2,6,8,-1,0); // gives minimum value 
+    document.write(a,"<br>");
+
+    var a = Math.sqrt(9); // square root 
+    document.write(a,"<br>");
+
+    var a = Math.cbrt(8); // cube root
+    document.write(a,"<br>");
+
+    var a = Math.pow(5,2); // gives exponential value
+    document.write(a,"<br>");
+
+    var a = Math.random(); // gives random value (default from 0-1)
+    document.write(a,"<br>");
+
+    var a = Math.abs(-5.89); // gives absolute positive value 
+    document.write(a,"<br>");
+
+    var a = Math.PI(); // gives pi value 
+    document.write(a,"<br>");
+</script>
+</body>
+</html>
+
+    

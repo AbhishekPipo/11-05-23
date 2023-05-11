@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = {
+        fname: "farhan",
+        lname: "pasha",
+        age: 21,
+        email: "farhanpasha@gmail.com",
+        abc: ["apple", "banana", "cat"],
+        sum: function () {
+          return 1000;
+        },
+        fullname: function () {
+          return this.fname + " " + this.lname; // this keyword
+        },
+        location: {
+          city: "bangalore",
+          state: "karnataka",
+        },
+      };
+      console.log(a);
+      document.write(a.fname);
+      document.write(a.abc[2]);
+      document.write(a.sum());
+      document.write(a.fullname());
+      document.write(a.location.state);
+
+      var b = new Object(); // another way to create an object
+      b.fname = "AC";
+      b.lname = "arjun";
+      b.age = 100;
+      console.log(b);
+      document.write(b.fname);
+      document.write(b["age"]); // another way to print the value of an object
+    </script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // change element 2 in array
+        var a = ["farhan",20,50,"pasha"];
+        document.write(a);
+        document.write("<br>");
+        a[1] = "panda"; 
+        document.write(a);
+        document.write("<br>");
+        
+    // to delete the element
+        delete a[2];
+        document.write(a);
+        document.write("<br>");
+
+    // to sort the array element
+        var arr = ["apple","dog","banana","elephant","cat"]
+        document.write(arr);
+        document.write("<br>");
+        arr.sort()
+        document.write(arr);
+        document.write("<br>");
+    // to reverse the array element
+        arr.reverse()
+        document.write(arr);
+        document.write("<br>");
+    // pop function in array
+        arr.pop() // removes the last element from the array
+        document.write(arr);
+        document.write("<br>");
+    // push function
+        arr.push("frog") // add an element at last index of array
+        document.write(arr);
+        document.write("<br>");
+    // shift function
+        arr.shift() // removes the 0th element from the array
+        document.write(arr);
+        document.write("<br>");
+    // unshift function
+        arr.unshift("farhan") // add an element at the 0th index of array
+        document.write(arr);
+        document.write("<br>");
+
+    // concat function
+        var a = ["my","name","is","farhan"];    
+        var b =  a.concat("pasha");
+        document.write(b);
+        document.write("<br>");
+        var a = ["my","name"];
+        var b = ["is","farhan"];
+        var c = ["pasha"];
+        var d = a.concat(b,c);
+        document.write(d);
+        document.write("<br>");
+
+    // join function
+        var a = ["my","name","is","farhan"];
+        var b = a.join("<br>")
+        document.write(b);
+        document.write("<br>");
+
+    // slice function
+        var a = ["apple","banana","cat","dog","elephant"]
+        var b = a.slice(1,3);
+        var c = a.slice(-2);
+        document.write(b);
+        document.write("<br>");
+        document.write(c);
+        document.write("<br>");
+    // splice function
+        a.splice(2,0,"farhan");
+        document.write(a);
+        document.write("<br>");
+        a.splice(2,3,"farhan");
+        document.write(a);
+        document.write("<br>");
+
+    // isarray function
+        b = Array.isArray(a)
+        document.write(b)
+        document.write("<br>");
+
+    // indexof function
+        b = a.indexOf("farhan",0)
+        document.write(b);
+        document.write("<br>");
+
+    // lastindexof function
+        b = a.lastIndexOf("farhan",4)
+        document.write(b);
+        document.write("<br>");
+
+    //includes function
+        b = a.includes("farhan")
+        document.write(b);
+        document.write("<br>");
+
+    //some function
+        var ages = [10,12,18,20,21];
+        document.write(ages+"<br>");
+        b = ages.some(adult);
+        document.write(b+"<br>");
+
+        function adult(age) {
+            return age >= 18;
+        }
+    
+    // every function
+        var ages = [15,18,22,10];
+        document.write(ages+"<br>");
+        b = ages.every(adult);
+        document.write(b+"<br>");
+
+        function adult(age) {
+            return age >= 18;
+        }
+
+    // find function
+        var ages = [25,18,22,10];
+        document.write(ages+"<br>");
+        b = ages.find(adult);
+        document.write(b+"<br>");
+
+        function adult(age) {
+            return age >= 18;
+        }
+    // findindex function
+        var ages = [25,18,22,10];
+        document.write(ages+"<br>");
+        b = ages.findIndex(adult);
+        document.write(b+"<br>");
+
+        function adult(age) {
+            return age >= 18;
+        }
+    // filter function
+        var ages = [25,18,22,10];
+        document.write(ages+"<br>");
+        b = ages.filter(adult);
+        document.write(b+"<br>");
+
+        function adult(age) {
+            return age >= 18;
+        }
+    // tostring function
+        a = ["apple","banana","cat","dog"];
+        a.toString()
+        document.write(a+"<br>");
+    // fill function
+        a.fill("farhan")
+        document.write(a+"<br>");
+
+    </script>
+</body>
+</html>
+

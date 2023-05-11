@@ -1,0 +1,46 @@
+Strings
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a = "my name is farhan pasha";
+    var b = a.length;
+    var c = a.toLocaleLowerCase();
+    var d = a.toLocaleUpperCase();
+    var e = a.includes("farhan"); // case sensitive
+    var f = a.startsWith("m");// case sensitive
+    var g = a.endsWith("ha");// case sensitive
+    var h = a.search("farhan"); // gives index value if present else returns -1 (case sensitive)
+    document.write(b + "<br>");
+    document.write(c);
+    document.write(d);
+    document.write(e);
+    document.write(f);
+    document.write(g);
+    document.write(h);
+    var str = "bangalore is a beautiful city"
+    a = str.match(/a/g) // creates an array of searched element present in the string
+    document.write(a);
+    a = str.indexOf("city") // prints index value of element which is available in the starting
+    document.write(a);
+    a = str.lastIndexOf("is"); // prints index value of element which is available in the last
+    document.write(a);
+    a = str.replace("bangalore","delhi");
+    document.write(a);
+    a = str.trim(); // removes spaces from right and left end
+    document.write(a);
+    a = str.charAt(10); // prints the character present in the index value
+    document.write(a);
+    a = str.split(" "); // splits the string and create a new array
+    document.write(a);
+</script>
+</body>
+</html>
